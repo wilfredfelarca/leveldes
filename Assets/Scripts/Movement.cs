@@ -12,7 +12,7 @@ public class PlayerMover : MonoBehaviour
 
         float speed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : moveSpeed;
 
-        transform.position += moveDirection * speed * Time.deltaTime;
+        transform.position += moveDirection * -speed * Time.deltaTime; //Negative speed to fix inverted direction
 
         if (moveDirection.sqrMagnitude > 0.0001f)
         {
