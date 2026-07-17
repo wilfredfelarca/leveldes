@@ -13,6 +13,10 @@ public class DeleteCollided : MonoBehaviour
     public float speed = 10f; // speed of enemy
     private int currentWaypoint = 0;
 
+    [SerializeField]
+    private Sugar sugar; 
+
+
     void Update()
     {
         if (waypoints.Length == 0)
@@ -35,7 +39,7 @@ public class DeleteCollided : MonoBehaviour
         // Only destroys the colliding object if it has the specified tag
         if (collision.gameObject.CompareTag(tagToDelete))
         {
-            Destroy(collision.gameObject);
+            EatFood(collision.gameObject);
         }
     }
 
@@ -43,8 +47,17 @@ public class DeleteCollided : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(tagToDelete))
         {
-            Destroy(collision.gameObject);
+            EatFood(collision.gameObject);
         }
+    }
+
+    private void EatFood(GameObject food)
+    {
+        if (sugar != null)
+        {
+            sugar.sugarAmount++;
+        }
+        Destroy(food);
     }
 
 }
