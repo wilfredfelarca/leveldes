@@ -8,13 +8,14 @@ using UnityEngine;
 public class DeleteCollided : MonoBehaviour
 {
     [SerializeField]
-    private string tagToDelete = "Food"; // The tag of the object to delete
+    private string tagToDelete = "Food, Buddy"; // The tag of the object to delete
     public Transform[] waypoints; // waypoints for the enemy to go
     public float speed = 10f; // speed of enemy
     private int currentWaypoint = 0;
 
     [SerializeField]
     private Sugar sugar; 
+    private Antfriends antfriends;
 
 
     void Update()
@@ -40,6 +41,7 @@ public class DeleteCollided : MonoBehaviour
         if (collision.gameObject.CompareTag(tagToDelete))
         {
             EatFood(collision.gameObject);
+            GetAnt(collision.gameObject);
         }
     }
 
@@ -48,6 +50,7 @@ public class DeleteCollided : MonoBehaviour
         if (collision.gameObject.CompareTag(tagToDelete))
         {
             EatFood(collision.gameObject);
+            GetAnt(collision.gameObject);
         }
     }
 
@@ -58,6 +61,15 @@ public class DeleteCollided : MonoBehaviour
             sugar.sugarAmount++;
         }
         Destroy(food);
+    }
+
+    private void GetAnt(GameObject buddy)
+    {
+        if (antfriends != null)
+        {
+            antfriends.antAmount++;
+        }
+        Destroy(buddy);
     }
 
 }
