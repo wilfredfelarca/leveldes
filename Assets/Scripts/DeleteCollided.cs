@@ -40,8 +40,7 @@ public class DeleteCollided : MonoBehaviour
         // Only destroys the colliding object if it has the specified tag
         if (collision.gameObject.CompareTag(tagToDelete))
         {
-            EatFood(collision.gameObject);
-            GetAnt(collision.gameObject);
+            HandleCollision(collision.gameObject);
         }
     }
 
@@ -49,8 +48,23 @@ public class DeleteCollided : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(tagToDelete))
         {
-            EatFood(collision.gameObject);
-            GetAnt(collision.gameObject);
+            HandleCollision(collision.gameObject);
+        }
+    }
+
+    private void HandleCollision(GameObject other)
+    {
+        if (other.CompareTag("Food"))
+        {
+            EatFood(other);
+        }
+        else if (other.CompareTag("Buddy"))
+        {
+            GetAnt(other);
+        }
+        else if (other.CompareTag("Player"))
+        {
+            HitPlayer(other);
         }
     }
 
@@ -63,13 +77,29 @@ public class DeleteCollided : MonoBehaviour
         Destroy(food);
     }
 
+    private void HitPlayer(GameObject player)
+    {
+        if (sugar == null) return;
+
+        if (sugar.sugarAmount <= 0)
+        {
+            // puts the player in the "Oh shit, Im gonna die" state
+            Destroy(player);
+        }
+        else
+        {
+            // checks if the sugar is still 1. if so they the player will not die; they'll lose a sugie though
+            sugar.sugarAmount--;
+        }
+    }
+
     private void GetAnt(GameObject buddy)
     {
         if (antfriends != null)
         {
             antfriends.antAmount++;
         }
-        Destroy(buddy);
+        
     }
 
 }

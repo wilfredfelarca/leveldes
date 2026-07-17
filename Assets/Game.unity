@@ -3200,6 +3200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: animal-bee14
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6279,7 +6283,7 @@ MonoBehaviour:
   tagToDelete: Player
   waypoints: []
   speed: 1
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1001 &1242843914
 PrefabInstance:
   m_ObjectHideFlags: 0
