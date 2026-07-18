@@ -268,7 +268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee13
+      value: Enemy13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1232,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (10)
+      value: Ally9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -1245,6 +1245,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1752730978}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752730980}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752730979}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1001 &283109243
 PrefabInstance:
@@ -1308,7 +1314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (13)
+      value: Ally12
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -1321,6 +1327,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1192433979}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1192433981}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1192433980}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &294048180
 GameObject:
@@ -1721,7 +1733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee9
+      value: Enemy9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1949,7 +1961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (5)
+      value: Ally5
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -1962,6 +1974,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 823392289}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 823392291}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 823392290}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!4 &480045700 stripped
 Transform:
@@ -2489,7 +2507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee10
+      value: Enemy10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2543,7 +2561,7 @@ MonoBehaviour:
   tagToDelete: Player
   waypoints: []
   speed: 1
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &631468779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
@@ -2912,6 +2930,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &685576070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70820308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &685576071
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70820308}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &689704919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,7 +3258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee14
+      value: Enemy14
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_TagString
@@ -3313,7 +3373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee1
+      value: Enemy1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3388,7 +3448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (12)
+      value: Ally11
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -3401,6 +3461,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1915956482}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1915956484}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1915956483}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &759396995 stripped
 GameObject:
@@ -3469,7 +3535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee4
+      value: Enemy4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3544,7 +3610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (7)
+      value: Ally6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -3560,6 +3626,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 685576069}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 685576071}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 685576070}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &795525894
 GameObject:
@@ -3851,6 +3923,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &823392290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823392288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &823392291
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823392288}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &825301306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4154,7 +4268,7 @@ MonoBehaviour:
   tagToDelete: Player
   waypoints: []
   speed: 1
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &886281253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4334,7 +4448,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848057014}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848057013}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848057012}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &940962101
 GameObject:
@@ -4749,7 +4872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (1)
+      value: Ally1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -4765,6 +4888,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1400303301}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1400303302}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &997205500
 GameObject:
@@ -5324,7 +5450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (14)
+      value: Ally13
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -5337,6 +5463,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1715106026}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715106028}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715106027}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1001 &1074443107
 PrefabInstance:
@@ -5400,7 +5532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee2
+      value: Enemy2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5475,7 +5607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (11)
+      value: Ally10
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -5488,6 +5620,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1530705986}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1530705988}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1530705987}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &1110752562
 GameObject:
@@ -5699,7 +5837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee8
+      value: Enemy8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5754,18 +5892,6 @@ MonoBehaviour:
   waypoints: []
   speed: 1
   sugar: {fileID: 240315732}
---- !u!114 &1166854067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166854064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eedf93e83aa88d48b52e0f6f8164ab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FollowThePath
 --- !u!1 &1168375964
 GameObject:
   m_ObjectHideFlags: 0
@@ -6245,6 +6371,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1192433980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392624165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1192433981
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392624165}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1210011255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -6349,7 +6517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (2)
+      value: Ally2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -6362,6 +6530,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2124139494}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2124139495}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2124139496}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &1246744186
 GameObject:
@@ -6568,7 +6742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (8)
+      value: Ally7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -6581,6 +6755,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1849843165}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1849843167}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1849843166}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &1288341099
 GameObject:
@@ -6639,6 +6819,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1299519814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299519812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1299519815
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299519812}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1325965379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,7 +7203,7 @@ MonoBehaviour:
   - {fileID: 1975225971}
   - {fileID: 2111622394}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &1357039338 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -7025,7 +7247,7 @@ MonoBehaviour:
   - {fileID: 1565965369}
   - {fileID: 1735507773}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &1392519854
 GameObject:
   m_ObjectHideFlags: 0
@@ -7179,6 +7401,33 @@ MonoBehaviour:
   speed: 15
   followDistance: 5
   player: {fileID: 225715179}
+--- !u!54 &1400303302
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617561242}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1430490629
 GameObject:
   m_ObjectHideFlags: 0
@@ -7633,7 +7882,7 @@ MonoBehaviour:
   - {fileID: 1254160319}
   - {fileID: 93089174}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1001 &1466780949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7696,7 +7945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee6
+      value: Enemy6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7981,7 +8230,7 @@ MonoBehaviour:
   - {fileID: 725246433}
   - {fileID: 1110752563}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!4 &1504756491 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -8125,6 +8374,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1530705987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530705985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1530705988
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530705985}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1536681328
 GameObject:
   m_ObjectHideFlags: 0
@@ -8713,7 +9004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (9)
+      value: Ally8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -8726,6 +9017,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1299519813}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299519815}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299519814}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &1615967770
 GameObject:
@@ -8882,7 +9179,7 @@ MonoBehaviour:
   - {fileID: 725246433}
   - {fileID: 1110752563}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!4 &1651023574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -9286,7 +9583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_Name
-      value: animal-caterpillar (4)
+      value: Ally4
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       propertyPath: m_TagString
@@ -9299,6 +9596,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1783287272}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1783287274}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1783287273}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &1676185800
 GameObject:
@@ -9471,6 +9774,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1715106027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473768810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1715106028
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473768810}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1735507772
 GameObject:
   m_ObjectHideFlags: 0
@@ -9528,6 +9873,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1752730979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661708018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1752730980
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661708018}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1764521085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
@@ -9671,6 +10058,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1783287273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631468779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1783287274
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631468779}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1809901801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9733,7 +10162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee5
+      value: Enemy5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9808,7 +10237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee7
+      value: Enemy7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9951,7 +10380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee11
+      value: Enemy11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9963,9 +10392,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1166854066}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1166854067}
   m_SourcePrefab: {fileID: 100100000, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
 --- !u!1 &1847209298
 GameObject:
@@ -10079,6 +10505,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847209298}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1848057011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+  m_PrefabInstance: {fileID: 904139825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1848057012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848057011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1848057013
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848057011}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1848057014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848057011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1848659385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -10120,7 +10614,7 @@ MonoBehaviour:
   tagToDelete: Player
   waypoints: []
   speed: 1
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!4 &1849686554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -10164,7 +10658,7 @@ MonoBehaviour:
   - {fileID: 320874810}
   - {fileID: 1288341100}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!4 &1849843164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
@@ -10191,6 +10685,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1849843166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764521085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1849843167
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764521085}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1856256544
 GameObject:
   m_ObjectHideFlags: 0
@@ -10437,6 +10973,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &1915956483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915956481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &1915956484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915956481}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1916892031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -10478,7 +11056,7 @@ MonoBehaviour:
   tagToDelete: Player
   waypoints: []
   speed: 1
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &1918463967
 GameObject:
   m_ObjectHideFlags: 0
@@ -11515,7 +12093,7 @@ MonoBehaviour:
   - {fileID: 313515372}
   - {fileID: 350310095}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &2098999848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -11559,7 +12137,7 @@ MonoBehaviour:
   - {fileID: 469650923}
   - {fileID: 1536681329}
   speed: 10
-  sugar: {fileID: 0}
+  sugar: {fileID: 240315732}
 --- !u!1 &2099522223
 GameObject:
   m_ObjectHideFlags: 0
@@ -11846,7 +12424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee3
+      value: Enemy3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11916,6 +12494,48 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4519545, y: 1.696261, z: 1.450335}
   m_Center: {x: -0.030268436, y: 0.93453205, z: 0.046040744}
+--- !u!114 &2124139495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124139493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549744cdb11fe2a479885dee10377854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Follower
+  speed: 15
+  followDistance: 5
+  player: {fileID: 225715179}
+--- !u!54 &2124139496
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124139493}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2125825602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11978,7 +12598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
       propertyPath: m_Name
-      value: animal-bee12
+      value: Enemy12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
