@@ -23,8 +23,6 @@ public class DeleteCollided : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("PlayerJustHit: " + playerJustHit);
-
         // Set a timer for the player to be invincible for a few seconds after being hit
         if (playerJustHit)
         {
