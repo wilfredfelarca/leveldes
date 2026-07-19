@@ -17,15 +17,31 @@ public class DeleteCollided : MonoBehaviour
     private Sugar sugar; 
     private Antfriends antfriends;
 
+    bool playerJustHit = false;
+    float invisTimeLength = 3f; //Seconds of invisibility after being hit
+    float invisTimeRemaining = 0f; //Seconds of invisibility after being hit
 
     void Update()
     {
+        Debug.Log("PlayerJustHit: " + playerJustHit);
+
+        // Set a timer for the player to be invincible for a few seconds after being hit
+        if (playerJustHit)
+        {
+            invisTimeRemaining -= Time.deltaTime;
+            Debug.Log("Invisibility time remaining: " + invisTimeRemaining);
+            if (invisTimeRemaining <= 0f)
+            {
+                playerJustHit = false;
+            }
+        }
+
         if (waypoints.Length == 0)
         {
             // prevents array going below zero
-            return; 
+            return;
         }
-        
+
         // move the enemy towards waypoints
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].position, speed * Time.deltaTime);
 
@@ -64,7 +80,10 @@ public class DeleteCollided : MonoBehaviour
         }
         else if (other.CompareTag("Player"))
         {
-            HitPlayer(other);
+            if (playerJustHit) // If the player was just hit, ignore this collision
+                return;
+            else
+                HitPlayer(other);
         }
     }
 
@@ -88,8 +107,10 @@ public class DeleteCollided : MonoBehaviour
         }
         else
         {
-            // checks if the sugar is still 1. if so they the player will not die; they'll lose a sugie though
+            // checks if the sugar is still 1+. if so they the player will not die; they'll lose a sugie though
             sugar.sugarAmount--;
+            playerJustHit = true;
+            invisTimeRemaining = invisTimeLength; // Reset invisibility time
         }
     }
 
