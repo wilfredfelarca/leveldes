@@ -1247,6 +1247,21 @@ MonoBehaviour:
   waypoints: []
   speed: 10
   sugar: {fileID: 0}
+--- !u!114 &225715182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225715174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931b80ba155e4e649a0095b0753f2e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMover
+  moveSpeed: 0
+  sprintSpeed: 0
+  rotationSpeed: 20
 --- !u!4 &226228249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c79b2dd35debc164094a10a90add8a9e, type: 3}
@@ -13965,6 +13980,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 225715181}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 225715182}
   m_SourcePrefab: {fileID: 100100000, guid: c5d3cceb86cb9124198cf663fbdb7fd8, type: 3}
 --- !u!1 &2095303318 stripped
 GameObject:
