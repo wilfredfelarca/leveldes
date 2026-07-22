@@ -804,7 +804,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15, y: -0.00002, z: -101}
-  m_LocalScale: {x: 45.049297, y: 30.543968, z: 57.459732}
+  m_LocalScale: {x: 67.33969, y: 30.543968, z: 57.459732}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1783251362}
@@ -856,7 +856,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a23755fe445c9845b8ffa5c8766cf46, type: 2}
+  - {fileID: 2100000, guid: d7d63b053ef3ddc41a1284f94c4a6433, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1609,7 +1609,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMover
   moveSpeed: 50
-  sprintSpeed: 0
   rotationSpeed: 20
 --- !u!65 &1211904308
 BoxCollider:
@@ -1818,7 +1817,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 340.1, y: 7.5, z: -566.2}
-  m_LocalScale: {x: 39.277122, y: 17.777218, z: 96.25251}
+  m_LocalScale: {x: 41.390232, y: 17.235546, z: 96.25251}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2427,7 +2426,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a23755fe445c9845b8ffa5c8766cf46, type: 2}
+  - {fileID: 2100000, guid: 9e79947b04dd55b4094b0c596051f2ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

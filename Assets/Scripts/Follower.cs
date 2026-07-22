@@ -40,6 +40,11 @@ public class Follower : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         TryStartFollowing(collision.gameObject);
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
+        }
     }
 
     private void OnTriggerEnter(Collider collision)
