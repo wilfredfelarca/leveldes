@@ -1330,6 +1330,7 @@ MonoBehaviour:
   tagToDelete: Food
   waypoints: []
   speed: 1
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!114 &225715181
 MonoBehaviour:
@@ -1346,6 +1347,7 @@ MonoBehaviour:
   tagToDelete: Buddy
   waypoints: []
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 0}
 --- !u!114 &225715182
 MonoBehaviour:
@@ -3054,6 +3056,7 @@ MonoBehaviour:
   - {fileID: 1642892231}
   - {fileID: 1200961141}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &631468779 stripped
 GameObject:
@@ -3337,6 +3340,7 @@ RectTransform:
   - {fileID: 672998120}
   - {fileID: 1451419774}
   - {fileID: 900582800}
+  - {fileID: 1135832124}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3418,7 +3422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: 42}
+  m_AnchoredPosition: {x: 331, y: -111}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &672998121
@@ -4702,7 +4706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -181}
+  m_AnchoredPosition: {x: 246, y: -155}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &825301308
@@ -4777,7 +4781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -69}
+  m_AnchoredPosition: {x: 356, y: -154}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &838525102
@@ -5034,6 +5038,7 @@ MonoBehaviour:
   - {fileID: 331505198}
   - {fileID: 1157856165}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &886281253
 GameObject:
@@ -6796,6 +6801,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1856256545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1135832123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135832124}
+  - component: {fileID: 1135832126}
+  - component: {fileID: 1135832125}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1135832124
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135832123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.9901, y: 1.9901, z: 1.9901}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 659514332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 300, y: -175}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1135832125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135832123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 365456f75b664e246888ab38863d246f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1135832126
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135832123}
+  m_CullTransparentMesh: 1
 --- !u!1 &1146889398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7126,6 +7206,7 @@ MonoBehaviour:
   - {fileID: 1622330891}
   - {fileID: 1579057297}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &1168375964
 GameObject:
@@ -7810,6 +7891,7 @@ MonoBehaviour:
   - {fileID: 1970091461}
   - {fileID: 2144451817}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &1211340743
 GameObject:
@@ -8345,7 +8427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -14}
+  m_AnchoredPosition: {x: 274, y: -110}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1325965381
@@ -8709,6 +8791,7 @@ MonoBehaviour:
   - {fileID: 1975225971}
   - {fileID: 2111622394}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &1357039338 stripped
 GameObject:
@@ -8753,6 +8836,7 @@ MonoBehaviour:
   - {fileID: 1565965369}
   - {fileID: 1735507773}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &1392519854
 GameObject:
@@ -9317,7 +9401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: 95}
+  m_AnchoredPosition: {x: 302, y: -66}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1455214113
@@ -9477,6 +9561,7 @@ MonoBehaviour:
   - {fileID: 2046327413}
   - {fileID: 1254160319}
   speed: 15
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1001 &1466780949
 PrefabInstance:
@@ -9856,6 +9941,7 @@ MonoBehaviour:
   - {fileID: 725246433}
   - {fileID: 1110752563}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!4 &1504756491 stripped
 Transform:
@@ -11069,6 +11155,7 @@ MonoBehaviour:
   - {fileID: 725246433}
   - {fileID: 1110752563}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!4 &1651023574 stripped
 Transform:
@@ -12806,6 +12893,7 @@ MonoBehaviour:
   - {fileID: 56843924}
   - {fileID: 852219990}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!4 &1849686554 stripped
 Transform:
@@ -12850,6 +12938,7 @@ MonoBehaviour:
   - {fileID: 320874810}
   - {fileID: 1288341100}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!4 &1849843164 stripped
 Transform:
@@ -13126,7 +13215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -125}
+  m_AnchoredPosition: {x: 301, y: -155}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1895434202
@@ -13282,6 +13371,7 @@ MonoBehaviour:
   - {fileID: 1735008210}
   - {fileID: 1077347594}
   speed: 15
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &1918463967
 GameObject:
@@ -14726,6 +14816,7 @@ MonoBehaviour:
   - {fileID: 313515372}
   - {fileID: 350310095}
   speed: 10
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &2098999848 stripped
 GameObject:
@@ -14770,6 +14861,7 @@ MonoBehaviour:
   - {fileID: 469650923}
   - {fileID: 1536681329}
   speed: 20
+  rotationSpeed: 20
   sugar: {fileID: 240315732}
 --- !u!1 &2099522223
 GameObject:
