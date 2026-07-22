@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 /// <summary>
 /// Deletes any object that collides with this object if it has the specified tag.
@@ -20,6 +21,7 @@ public class DeleteCollided : MonoBehaviour
     bool playerJustHit = false;
     float invisTimeLength = 3f; //Seconds of invisibility after being hit
     float invisTimeRemaining = 0f; //Seconds of invisibility after being hit
+    
 
     void Update()
     {
@@ -100,8 +102,20 @@ public class DeleteCollided : MonoBehaviour
 
         if (sugar.sugarAmount <= 0)
         {
+            // Find the gameover text and show it
+            GameObject go = GameObject.Find("gameover");
+            if (go != null)
+            {
+                TextMeshProUGUI gameoverText = go.GetComponent<TextMeshProUGUI>();
+                if (gameoverText != null)
+                {
+                    gameoverText.gameObject.SetActive(true);
+                    gameoverText.text = "GAME OVER!";
+                }
+            }
             // puts the player in the "Oh shit, Im gonna die" state
             Destroy(player);
+            
         }
         else
         {
