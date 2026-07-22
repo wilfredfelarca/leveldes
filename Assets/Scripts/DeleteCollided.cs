@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Deletes any object that collides with this object if it has the specified tag.
@@ -9,10 +10,11 @@ using TMPro;
 public class DeleteCollided : MonoBehaviour
 {
     [SerializeField]
-    private string tagToDelete = "Food, Buddy"; // The tag of the object to delete
+    private string tagToDelete = "Food"; // The tag of the object to delete
     public Transform[] waypoints; // waypoints for the enemy to go
     public float speed = 10f; // speed of enemy
     private int currentWaypoint = 0;
+    public float rotationSpeed = 20f;
 
     [SerializeField]
     private Sugar sugar; 
@@ -48,6 +50,16 @@ public class DeleteCollided : MonoBehaviour
         if (Vector3.Distance(transform.position, waypoints[currentWaypoint].position) < 0.1f)
         {
             currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
+        }
+
+        // Determine rotation based on where this object is moving (waypoints), not player input.
+        Vector3 waypointDirection = waypoints[currentWaypoint].position - transform.position;
+        waypointDirection.y = 0f; // keep rotation on the horizontal plane
+
+        if (waypointDirection.sqrMagnitude > 0.0001f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(waypointDirection.normalized, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
     }
     
