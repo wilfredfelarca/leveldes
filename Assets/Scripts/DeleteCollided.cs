@@ -105,7 +105,7 @@ public class DeleteCollided : MonoBehaviour
         {
             sugar.sugarAmount++;
         }
-        Destroy(food);
+        food.SetActive(false);
     }
 
     private void HitPlayer(GameObject player)
