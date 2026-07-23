@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
+using TMPro;
 
 public class PlayerMover : MonoBehaviour
 {
@@ -10,15 +10,21 @@ public class PlayerMover : MonoBehaviour
     private Vector3 boxHalf = new Vector3(0.6f, 0.6f, 0.3f);
     LayerMask wallMasks;
 
+    GameObject go;
+    TextMeshProUGUI gameoverText;
+
     void Awake()
     {
         wallMasks = LayerMask.GetMask("Wall");
+        go = GameObject.Find("gameover");
+        gameoverText = go.GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
     {
         Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
+        #region Movement Code
         if (Input.GetAxisRaw("Horizontal") == 1)
             CheckWallThenMove(Vector3.left);
 
@@ -30,11 +36,25 @@ public class PlayerMover : MonoBehaviour
 
         else if (Input.GetAxisRaw("Vertical") == -1)
             CheckWallThenMove(Vector3.forward);
+        #endregion
 
         if (moveDirection.sqrMagnitude > 0.0001f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(-moveDirection, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
+
+        /* if player goes below a certain y value, trigger game over
+         * mostly a failsafe because we couldnt patch the collision fully
+         * note: this is meant to be in GameOverFunctionality.cs,
+         * but because that's attached to the canvas, I put it here as a quick fix. */
+        if (transform.position.y < -10f)
+        {
+            if (gameoverText != null)
+            {
+                gameoverText.gameObject.SetActive(true);
+                gameoverText.text = "GAME OVER!";
+            }
         }
 
         //Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
